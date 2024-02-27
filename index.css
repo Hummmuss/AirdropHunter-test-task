@@ -1,0 +1,373 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEBF6;
+}
+
+#wrapper {
+    margin-top: 100px;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+}
+
+#newsContainerOpen {
+    width: 100%;
+    border-radius: 10px;
+    left: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
+}
+@media screen and (max-width: 960px) and (min-width: 575px) {
+    #wrapper {
+        width: 696px;
+    }
+}
+
+#newsContainerClosed {
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.show {
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #008cff;
+}
+
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.card-img {
+    border-radius: 0 10px 10px 0;
+}
+
+.card-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: start;
+}
+
+.hide {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #008cff;
+}
+
+.circle-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.logo-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.slider-container {
+    margin: 0 15px 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.logo {
+    width: 40px;
+    margin: 10px;
+}
+
+.logo-wrapper {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.logo-wrapper:hover {
+    background-color: #88abf3;
+}
+
+.arrow-left,
+.arrow-right {
+    position: relative;
+    display: inline-block;
+}
+
+.card-arrow-left,
+.card-arrow-right {
+    position: relative;
+    display: inline-block;
+}
+
+
+.hide:hover,
+.show:hover,
+.arrow-left:hover,
+.arrow-right:hover,
+.card-arrow-left:hover,
+.card-arrow-right:hover {
+    opacity: 0.5;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 416px;
+    height: 742px;
+    margin-top: 24px;
+    border-radius: 10px;
+    border: none
+}
+
+.card-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 368px;
+    font-family: Inter, serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+.card-description-container {
+    height: 41%;
+}
+
+.card-description {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-title img {
+    width: 32px;
+    margin: 7px;
+}
+
+.card-title h5 {
+    margin: 0;
+}
+
+.description {
+    color: #999999;
+    font-size: 17px;
+    height: 100px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 23.40px;
+    word-wrap: break-word
+}
+
+.read-more {
+    width: 100%;
+    color: #3D8AFF;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 60px 0 10px 0
+}
+
+.rect {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 104px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px #999999 solid
+}
+
+.onAI {
+    width: 100%;
+    color: black;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.exp-air {
+    width: 100%;
+    color: #444444;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.exp-air-value {
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.probability {
+    width: 100%;
+    color: #444444;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 34px;
+    word-wrap: break-word
+}
+
+.probability-value {
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.tariff-cost-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px
+}
+
+.tariff {
+    color: #636775;
+    font-size: 11px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 15px;
+    word-wrap: break-word;
+    margin-right: 143px
+}
+
+.cost {
+    color: #636775;
+    font-size: 11px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 15px;
+    word-wrap: break-word;
+    margin-bottom: 6px
+}
+
+.accounts-row {
+    width: 100%;
+    height: 31px;
+    background: #F8F9FC;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 7px 30px 7px 30px
+}
+
+.accounts-quantity {
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.accounts-cost {
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.accounts-detail {
+    width: 100%;
+    color: #3D8AFF;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.btn {
+    width: 100%;
+    height: 55px;
+    color: #23ACDE;
+    background-color: #E0E3F5;
+    border-color: #23ACDE;
+    border-radius: 10px
+}
+
+.card-btn-content {
+    width: 100%;
+    text-align: center;
+    color: #444444;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+    margin-top: 10px
+}
